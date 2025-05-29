@@ -178,10 +178,10 @@
 
 ![image](https://github.com/user-attachments/assets/786c49e2-c7d3-47b6-b3c0-e9f0c456f6b0)
 
-| 항목          | 단순 S3 | CloudFront | 감소율 |
-| ------------- | ------- | ---------- | ------ |
-| First Contentful Paint |  0.3s |    0.6s   |     |
-| Largest Contentful Paint           | 0.9s   | 0.6s    |     |
-| Total Blocking Time            | 0ms |  0ms  |     |
-| Cumulative Layout Shift          | 0  |  0.001    |      |
-| Speed Index          |4.9s   |    0.9s  |      |
+| 항목                     | 단순 S3 | CloudFront | 감소율      |
+| ------------------------ | ------- | ---------- | ----------- |
+| First Contentful Paint   | 0.3s    | 0.6s       | 오히려 증가 |
+| Largest Contentful Paint | 0.9s    | 0.6s       | 33%         |
+| Total Blocking Time      | 0ms     | 0ms        | 0%          |
+| Cumulative Layout Shift  | 0       | 0.001      | 0.1% 증가   |
+| Speed Index              | 4.9s    | 0.9s       | 80%         |
