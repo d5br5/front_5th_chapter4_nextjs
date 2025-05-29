@@ -70,7 +70,7 @@
 
 | 유형                  | 설명                              | 예시                      |
 | --------------------- | --------------------------------- | ------------------------- |
-| **블록 스토리지**     | 하드디스크처럼 작동, DB 등에 사용 | AWS EBS, iSCSI            |
+| **블록 스토리지**     | 하드디스크처럼 작동, DB 등에 사용 |                           |
 | **파일 스토리지**     | 디렉토리 구조, NAS처럼 공유 사용  | NFS, EFS                  |
 | **오브젝트 스토리지** | 파일 + 메타데이터를 객체로 저장   | AWS S3, GCP Cloud Storage |
 
@@ -148,11 +148,26 @@
   - GitHub Actions에서 사용하는 비공개 환경 변수
   - API 키, Access Token, 배포 비밀번호 같은 민감한 정보를 안전하게 저장하고 사용할 수 있도록 제공
 
-
 ## CDN과 성능최적화
 
 - CDN 최적화 전 vs 후
 
 <img src="https://github.com/user-attachments/assets/72edc6dc-7ea3-41ca-900a-c031ebaf58db" style="width:51%"/> <img src="https://github.com/user-attachments/assets/46363a5e-c91a-4185-82c3-ac9dfca1339b"  style="width:47%"/>
 
+- 응답 속도
 
+| 항목          | 단순 S3 | CloudFront | 감소율 |
+| ------------- | ------- | ---------- | ------ |
+| html document | 432ms   | 17ms       | 96%    |
+| css           | 276ms   | 19ms       | 93%    |
+| js            | 4,097ms | 149ms      | 96%    |
+| font          | 1,146ms | 60ms       | 95%    |
+
+- 파일 크기
+
+| 항목          | 단순 S3 | CloudFront | 감소율 |
+| ------------- | ------- | ---------- | ------ |
+| html document | 12.8kB  | 3.3kB      | 74%    |
+| css           | 12.4kB  | 3.6kB      | 71%    |
+| js            | 365.1kB | 102.9kB    | 72%    |
+| font          | 60.7kB  | 60.5kB     | 0%     |
