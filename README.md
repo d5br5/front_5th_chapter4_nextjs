@@ -148,6 +148,11 @@
   - GitHub Actions에서 사용하는 비공개 환경 변수
   - API 키, Access Token, 배포 비밀번호 같은 민감한 정보를 안전하게 저장하고 사용할 수 있도록 제공
 
+
 ## CDN과 성능최적화
 
-CDN 도입 전과 도입 후의 성능 개선 보고서 작성
+- CDN 최적화 전 vs 후
+
+<img src="https://github.com/user-attachments/assets/72edc6dc-7ea3-41ca-900a-c031ebaf58db" style="width:51%"/> <img src="https://github.com/user-attachments/assets/46363a5e-c91a-4185-82c3-ac9dfca1339b"  style="width:47%"/>
+
+
