@@ -1,5 +1,8 @@
 # 프론트엔드 배포 파이프라인 구성
 
+![image](https://github.com/user-attachments/assets/26f22399-ae4c-41c1-bf31-c0104df7db32)
+
+
 ## 주요 링크
 
 - S3 bucket website endpoint: http://hhplus-nextjs-dohkim.s3-website-ap-southeast-2.amazonaws.com
